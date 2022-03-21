@@ -3,7 +3,7 @@ node {
          checkout scm
      }
      stage('Build image') {
-         app = docker.build("mlopsengineer/flask-example")
+         app = docker.build("metacats/mlopsengineer")
          
      }
      stage('Push image') {
